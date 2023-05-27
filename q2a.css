@@ -1,0 +1,38 @@
+#form_box{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    text-align: center;
+    
+}
+#announc_btn{
+    margin-bottom:16px;
+}
+.attach_btn{
+    float:right;
+    
+    
+}
+
+.feild_title{
+    margin-left: 20px;
+}
+ 
+#form{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    row-gap: 10px;
+}
+.input_feild{
+  margin-top: 16px;
+  margin-left: 0px;
+  justify-self: flex-start;
+}
+#post_div{
+grid-column: span 2;
+ text-align: center;
+ margin-bottom:30px;
+}
+#post_btn{
+    width: 60px;
+}

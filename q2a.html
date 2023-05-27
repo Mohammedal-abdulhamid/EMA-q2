@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="q2a.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+   <h1 id="header"> Announcement </h1>
+   <button id="announc_btn"> New announcement</button>
+    <div id="form_box">
+        <div id="attach_btn"> <button class="attach_btn"> Add file </btn></div>
+        <form id="form" action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post" name="form1">
+                <p class ="feild_title"> Subject: </p>
+                <div class="input_feild"><input id="announcement_subject" type="text" name="announcement_subject" value="announcement subject" size="30" maxlength="30" /></div>
+                <p class ="feild_title"> Announcement: </p>
+                <div class="input_feild"><textarea id="announcement" name="announcement" cols="35" rows="5">Write announcement here</textarea></div>
+                <p class ="feild_title"> Date:</p>
+                <div class="input_feild"><input id="date" type="date" value="01/012023" /></div>
+                <p class ="feild_title"> name:</p>
+                <div class="input_feild"><input id="name" type="text" value="write your name" /></div>
+                <div id="post_div"><button id="post_btn"> Post </button></div>
+
+        </form>
+    </div>
+    
+</body>
+</html>
