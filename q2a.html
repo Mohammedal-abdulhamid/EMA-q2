@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,49 @@
     <title>Document</title>
     <link href="q2a.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-   <h1 id="header"> Announcement </h1>
-   <button id="announc_btn"> New announcement</button>
-    <div id="form_box">
-        <div id="attach_btn"> <button class="attach_btn"> Add file </btn></div>
-        <form id="form" action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post" name="form1">
-                <p class ="feild_title"> Subject: </p>
-                <div class="input_feild"><input id="announcement_subject" type="text" name="announcement_subject" value="announcement subject" size="30" maxlength="30" /></div>
-                <p class ="feild_title"> Announcement: </p>
-                <div class="input_feild"><textarea id="announcement" name="announcement" cols="35" rows="5">Write announcement here</textarea></div>
-                <p class ="feild_title"> Date:</p>
-                <div class="input_feild"><input id="date" type="date" value="01/012023" /></div>
-                <p class ="feild_title"> name:</p>
-                <div class="input_feild"><input id="name" type="text" value="write your name" /></div>
-                <div id="post_div"><button id="post_btn"> Post </button></div>
 
-        </form>
+<body>
+    <header>
+        <nav id="nav">
+         <ul>
+          <li> <a href="#Home"> Home </a></li>
+          <li><a href="#Walking_event">Walking event</a></li>
+          <li><a href="#Other_event" > Other event</a></li>
+          <li><a href="#Membership"> Membership</a></li>
+          <li><a href="#News_items"> News items</a></li>
+          <li><a href="announcement"> Annaouncement</a></li>
+         </ul>
+      </nav>
+    </header>
+    <div id="main">
+        <h1 id="header"> Announcement </h1>
+        <button id="announc_btn"> New announcement</button>
+
+        <div id="form_box">
+            <div id="attach_btn"> <button class="attach_btn"> Add file </button>
+            </div>
+            <!--form -->
+            <form id="form" action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post"
+                name="announcement_form">
+                <input type="hidden" name="SessionIdentifie" value="ee32-ff67-abcd1234-9090" />
+                <p class="feild_title"> Subject: </p>
+                <!-- size="30" maxlength="30" -->
+                <div class="input_feild"><input id="announcement_subject" type="text" name="announcement_subject"
+                        placeholder="announcement subject" /></div>
+                <p class="feild_title"> Announcement: </p>
+                <!-- cols="50" rows="10" -->
+                <div class="input_feild"><textarea id="announcement" name="announcement"
+                        placeholder="write announcement" cols="50" rows="10"></textarea></div>
+                <p class="feild_title"> Date:</p>
+                <div class="input_feild"><input id="date" type="date" /></div>
+                <p class="feild_title"> name:</p>
+                <div class="input_feild"><input id="name" type="text" placeholder="write your name" /></div>
+                <div id="post_div"><input type="submit" id="post_btn" value="Submit"> </div>
+
+            </form>
+        </div>
+
     </div>
-    
 </body>
+
 </html>

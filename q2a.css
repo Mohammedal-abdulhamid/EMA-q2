@@ -1,18 +1,65 @@
-#form_box{
+body{
     display: flex;
     flex-direction: column;
-    background-color: gray;
+    /* align-items: self-start; */
+}
+ h1{
+    margin-left: 33px;
+ }
+ #nav{
+    width:100vw;
+    background-color: #D9D9D9;
+    height: 40px;
+ }
+ ul li{
+  list-style-type: none;
+  border-right: 1px solid rgb(116, 174, 246);
+  margin-top: 5px;
+    margin-right:2rem;
+    
+ }
+ li a{
+    text-decoration: none;
+    color: black;
+    padding:10px
+ }
+ ul{
+    display: flex;
+    justify-content:space-between;
+    
+    margin: auto;
+ }
+
+#main{
     text-align: center;
+    border: 1px solid rgb(131, 202, 246);
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+#form_box{
+   
+ background-color: #D9D9D9;
+ text-align: center;
+ margin: auto;
+ width: 90%;
+ padding: 20px;
+  
     
 }
 #announc_btn{
     margin-bottom:16px;
+    margin-left: 33px;
+    
 }
 .attach_btn{
     float:right;
-    
+    margin: 16px;
     
 }
+
 
 .feild_title{
     margin-left: 20px;
@@ -25,8 +72,9 @@
 }
 .input_feild{
   margin-top: 16px;
-  margin-left: 0px;
   justify-self: flex-start;
+  max-width: 90%;
+  
 }
 #post_div{
 grid-column: span 2;
@@ -36,3 +84,6 @@ grid-column: span 2;
 #post_btn{
     width: 60px;
 }
+/* @media screen and (orientation: landscape) {
+    /* CSS rules for devices held horizontally */
+  /* } */ */
